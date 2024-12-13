@@ -6,20 +6,18 @@
     <title>My Portfolio</title>
     <style>
         :root {
-            --background-light: #f4f4f9;
-            --text-light: #333;
             --background-dark: #1e1e1e;
             --text-dark: #ddd;
-            --link-light: #007acc;
-            --link-dark: #6ca0dc;
+            --link-dark: #87cefa;
+            --link-dark-hover: #b0e0e6;
         }
 
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: var(--background-light);
-            color: var(--text-light);
+            background-color: var(--background-dark);
+            color: var(--text-dark);
             display: flex;
             flex-direction: row;
             min-height: 100vh;
@@ -41,13 +39,14 @@
             margin-bottom: 1rem;
         }
         .sidebar a {
-            color: var(--link-light);
+            color: var(--link-dark);
             text-decoration: none;
             margin: 0.5rem 0;
             display: flex;
             align-items: center;
         }
         .sidebar a:hover {
+            color: var(--link-dark-hover);
             text-decoration: underline;
         }
         .sidebar a img {
@@ -61,7 +60,7 @@
             overflow-y: auto;
         }
         h2 {
-            color: #444;
+            color: #fff;
         }
         footer {
             background: #333;
@@ -74,43 +73,19 @@
             margin-bottom: 1.5rem;
         }
         .project a {
-            color: var(--link-light);
+            color: var(--link-dark);
             text-decoration: none;
         }
         .project a:hover {
+            color: var(--link-dark-hover);
             text-decoration: underline;
         }
         .publication {
             margin-bottom: 1rem;
         }
-        .dark-mode {
-            --background-light: #1e1e1e;
-            --text-light: #ddd;
-            --link-light: #6ca0dc;
-        }
-        #theme-toggle {
-            position: fixed;
-            top: 10px;
-            right: 10px;
-            background: none;
-            border: none;
-            cursor: pointer;
-            padding: 0;
-        }
-        #theme-toggle img {
-            width: 30px;
-            height: 30px;
-            transition: transform 0.3s;
-        }
-        #theme-toggle img:hover {
-            transform: scale(1.1);
-        }
     </style>
 </head>
 <body>
-    <button id="theme-toggle">
-        <img src="light-mode-icon.png" alt="Toggle Dark Mode">
-    </button>
     <div class="sidebar">
         <img src="profile-photo.jpg" alt="Profile Photo">
         <h2>My Portfolio</h2>
@@ -167,17 +142,5 @@
             <p>&copy; 2024 My Portfolio</p>
         </footer>
     </div>
-
-    <script>
-        const toggleButton = document.getElementById('theme-toggle');
-        const toggleImage = toggleButton.querySelector('img');
-
-        toggleButton.addEventListener('click', () => {
-            document.body.classList.toggle('dark-mode');
-            const isDarkMode = document.body.classList.contains('dark-mode');
-            toggleImage.src = isDarkMode ? 'dark-mode-icon.png' : 'light-mode-icon.png';
-            toggleImage.alt = isDarkMode ? 'Toggle Light Mode' : 'Toggle Dark Mode';
-        });
-    </script>
 </body>
 </html>
