@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Hendry's Portofolio</title>
     <style>
         :root {
             --background-dark: #1e1e1e;
@@ -51,9 +51,30 @@
             text-decoration: underline;
         }
         .sidebar a img {
-            width: 20px;
-            height: 20px;
-            margin-right: 8px;
+            width: 10px;
+            height: 10px;
+            margin-right: 5px;
+            margin-bottom: 2px;
+        }
+        .sidebar .toc {
+            margin-top: 2rem;
+            width: 100%;
+        }
+        .sidebar .toc ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .sidebar .toc ul li {
+            margin: 0.5rem 0;
+        }
+        .sidebar .toc ul li a {
+            color: var(--link-dark);
+            text-decoration: none;
+        }
+        .sidebar .toc ul li a:hover {
+            color: var(--link-dark-hover);
+            text-decoration: underline;
         }
         .content {
             width: 75%;
@@ -67,80 +88,135 @@
             background: #333;
             color: #fff;
             text-align: center;
-            padding: 0.5rem 0;
+            padding: 0;
             font-size: 0.8rem;
         }
-        .project {
-            margin-bottom: 1.5rem;
+        .rhs_listing {
+            margin-left: 20pt;
         }
-        .project a {
+        .rhs_listing a {
             color: var(--link-dark);
             text-decoration: none;
         }
-        .project a:hover {
+        .rhs_listing a:hover {
             color: var(--link-dark-hover);
             text-decoration: underline;
-        }
-        .publication {
-            margin-bottom: 1rem;
-        }
-    </style>
+        }    </style>
 </head>
 <body>
     <div class="sidebar">
-        <img src="profile-photo.jpg" alt="Profile Photo">
-        <h2>My Portfolio</h2>
-        <p>Hi, I'm a theoretical/computational physicist transitioning into experimental physics.</p>
-        <a href="https://orcid.org/your-orcid-id" target="_blank">
-            <img src="orcid-icon.png" alt="ORCID">ORCID
+        <img src="assets/profile-photo.jpg" alt="Profile Photo">
+        <h3>Hendry (Minfui Lim)</h3>
+        <p>A quantum physics versatilist.</p>
+
+        <!-- <div class="toc">
+            <h3>Navigation</h3>
+            <ul>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#publications">Publications</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div> -->
+
+        <br>
+        <br>
+        <br>
+        <a href="https://orcid.org/0000-0002-2957-2438" target="_blank">
+            <img src="assets/orcid-icon.png" alt="ORCID">0000-0002-2957-2438
         </a>
-        <a href="https://github.com/yourusername" target="_blank">
-            <img src="github-icon.png" alt="GitHub">GitHub
+        <a href="https://github.com/hendry24" target="_blank">
+            <img src="assets/github-icon.png" alt="GitHub">hendry24
         </a>
-        <a href="https://linkedin.com/in/yourlinkedin" target="_blank">
-            <img src="linkedin-icon.png" alt="LinkedIn">LinkedIn
-        </a>
-        <a href="mailto:yourname@example.com">
-            <img src="email-icon.png" alt="Email">Email Me
+        <a href="mailto:hendry01@ui.ac.id" target="_blank">
+            <img src="assets/email-icon.png" alt="GitHub">hendry01@ui.ac.id
         </a>
     </div>
 
     <div class="content">
-        <section id="projects">
-            <h2>Projects</h2>
-            <div class="project">
-                <h3>Project 1: Computational Simulation</h3>
-                <p>Description: A simulation tool for modeling complex physical systems.</p>
-                <img src="project1-screenshot.jpg" alt="Screenshot of Project 1">
-                <a href="https://github.com/yourusername/project1" target="_blank">View on GitHub</a>
+        <section id="what_i_do">
+            <h2>What I Do</h2>
+            <div class="rhs_listing">
+                <p>
+                Starting with binging YouTube videos, I am now an aspiring researcher
+                capable of discovering novel results in quantum physics. Nothing beats a sip of coffee 
+                and some scratches to the head figuring out what my result implies, as well as 
+                the occasional <em>eureka moments</em> that follow. 
+                </p>
+                <p>
+                I enjoy working
+                on a wide range of problems in quantum physics&mdash;being a generalist.
+                It is hard to choose between theoretical, computational, and experimental
+                work&mdash;everything is equally interesting. However, I do have a 
+                preference for realistic results and would love to delve deeper into the
+                experimental sides of quantum physics. 
+                </p>
+                <p>
+                Wouldn't it be cool if another
+                quantum revolution were to happen in my lifetime? Wouldn't it be cool
+                if I contributed to realizing it? At the moment, I look forward to what
+                I will stumble upon next.
+                </p>
             </div>
-            <div class="project">
-                <h3>Project 2: Data Analysis Pipeline</h3>
-                <p>Description: A pipeline for analyzing and visualizing experimental data.</p>
-                <img src="project2-screenshot.jpg" alt="Screenshot of Project 2">
-                <a href="https://github.com/yourusername/project2" target="_blank">View on GitHub</a>
+        </section>
+        
+        <section id="educations">
+            <h2>Educations</h2>
+            <div class="rhs_listing">
+                <h3>University of Indonesia</h3>
+                <p>Bachelor of Science (S.Si.), GPA: 3.88/4.00</p>
+                <p>Thesis: Quantum Optimal Control for Decoherence in a Nitrogen-Vacancy Center Qubit</p>
+            </div>
+        </section>
+
+        <section id="experiences">
+            <h2>Experiences</h2>
+            <div class="rhs_listing">
+                <h3>Research Assistanship at BRIN - Indonesia National Research and Innovation Agency</h3>
+                <p>Research Assistant at the Research Center for Quantum Physics, working on
+                    various topics: quantum optics, quantum nonnlinear systems, quantum computing, neural networks, nonlinear optics, etc.  </p>
+            </div>
+            <div class="rhs_listing">
+                <h3>Research Visit: Pohang University of Science and Technology</h3>
+                <p>A short visit to the Hybrid Quantum Device Lab where I learned to use 
+                    COMSOL Multiphysics<sup>&reg;</sup> to model a superconducting microwave
+                    cavity coupled to a vacuum gap capacitor and was guided to observe experimental
+                    appratuses for quantum physics.
+                </p>
             </div>
         </section>
 
         <section id="publications">
             <h2>Publications</h2>
-            <div class="publication">
-                <h3>Publication 1: "Title of Research Paper"</h3>
-                <p>Journal Name, Year, DOI: <a href="https://doi.org/example1" target="_blank">https://doi.org/example1</a></p>
+            <div class="rhs_listing">
+                <h3>Transient Dynamics of the Quantum Stuart-Landau Oscillator</h3>
+                <p><a href="https://doi.org/10.48550/arXiv.2406.12337" target="_blank">arXiv:2406.12337</a></p>
             </div>
-            <div class="publication">
-                <h3>Publication 2: "Title of Another Research Paper"</h3>
-                <p>Journal Name, Year, DOI: <a href="https://doi.org/example2" target="_blank">https://doi.org/example2</a></p>
+            <div class="rhs_listing">
+                <h3>Efficiency of optimal control for noisy spin qubits in diamond</h3>
+                <p><a href="https://doi.org/10.48550/arXiv.2411.05078" target="_blank">arXiv:2411.05078</a></p>
+            </div>
+            <div class="rhs_listing">
+                <h3>Efficient Classical Computation of Single-Qubit Marginal Measurement Probabilities to Simulate Certain Classes of Quantum Algorithms</h3>
+                <p><a href="https://doi.org/10.48550/arXiv.2411.06822" target="_blank">arXiv:2411.06822</a></p>
             </div>
         </section>
 
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>You can reach me at <a href="mailto:yourname@example.com">yourname@example.com</a>.</p>
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="rhs_listing">
+                <h3>moyalstar</h3>
+                <p>Symbolically evaluate Moyal &star;-products with SymPy.</p>
+                <a href="https://github.com/hendry24/moyalstar" target="_blank">(Install on GitHub)</a>
+            </div>
+            <div class="rhs_listing">
+                <h3>qbou</h3> 
+                <p>Qubit under Ornstein-Uhlenbeck noises, its dynamical decoupling, and optimal control.</p>
+                <p><em>(stay tuned)</em></p>
+            </div>
         </section>
 
         <footer>
-            <p>&copy; 2024 My Portfolio</p>
+            <p>&copy; 2024 HM Lim</p>
         </footer>
     </div>
 </body>
